@@ -1,39 +1,115 @@
+.bloc {
+  height: 2500px;
+}
 
-.bloc{
-    height: 2500px;
-  }
-  .carre1,.carre2,.carre3,.carre4,.carre{
-    height: 100px;
-    width: 100px;
-    background: blue;
-  }
-  .carre1{
-    position: fixed;
-    top: 150px;
-    right: 0;
-    background: orange;
-  }
-  .carre2{
-    position: relative;
-    top: 150px;
-    background: blue;
-    z-index:1;
-  }
-  .carre3{
-    position: relative;
-    top: 150px;
-    left: 100px;
-    background-color: blue;
-    z-index:1;
-  }
-  .carre4{
-    position: relative;
-    top: 150px;
-    z-index:1;
-  }
-  .carre{
-    position: fixed;
-    width: 100%;
-    background: orange;
-    z-index:2;
-  }
+.carre1,
+.carre2,
+.carre3,
+.carre4,
+.carre {
+  height: 100px;
+  width: 100px;
+  background: blue;
+}
+
+/* .carre{} */
+
+.carre2,
+.carre3,
+.carre4 {
+  position: relative;
+  top: 150px;
+  z-index: 1;
+}
+
+.carre1 {
+  position: fixed;
+  top: 150px;
+  right: 0;
+  background: orange;
+}
+
+
+.carre2,
+.carre3 {
+  background-color: blue;
+}
+
+
+
+.carre3 {
+  left: 100px;
+
+}
+
+.carre {
+  position: fixed;
+  width: 100%;
+  background: #263238;
+  z-index: 2;
+}
+
+ul {
+  text-align: center;
+  position: relative;
+  left: 24%;
+}
+
+ul>li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+  /* margin: 3%; */
+  font-size: 1.5em;
+  padding: 1%;
+  height: 100%;
+  border-bottom: 2px solid transparent;
+}
+
+li>a {
+  text-decoration: none;
+}
+
+a:link,
+a:active {
+  color: #f1cb6b;
+}
+
+ul>li:hover {
+  border-color: #f1cb6b;
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+}
+
+.logo {
+  max-height: 100px;
+  position: fixed;
+  left: 15px;
+  top: 10px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.logo:hover {
+  border: 1px solid #f1cb6b;
+  transform: rotateZ(360deg);
+  transition: 0.6s linear;
+  -webkit-transition: 0.6s linear;
+  -moz-transition: 0.6s linear;
+  -ms-transition: 0.6s linear;
+  -o-transition: 0.6s linear;
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+  -ms-transform: rotateZ(360deg);
+  -o-transform: rotateZ(360deg);
+}
+
+li:nth-child(1):hover {
+  border: none;
+}
