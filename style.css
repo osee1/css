@@ -116,7 +116,7 @@ li:nth-child(1):hover {
 
 .footer{
   bottom: 0;
-  height: 400px;
+  height: 420px;
   width: 100%;
   background-color: #263238;
   padding: 2px;
@@ -131,7 +131,7 @@ li:nth-child(1):hover {
 }
 .flex-container>div{
   width: 33%;
-  height: 300px;
+  height: 400px;
   /* background-color: blue; */
 }
 .flex-container img {
